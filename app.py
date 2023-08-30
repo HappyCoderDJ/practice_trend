@@ -5,7 +5,7 @@ import seaborn as sns
 
 
 # 폰트 설정
-plt.rcParams['font.family'] = 'AppleGothic'
+# plt.rcParams['font.family'] = 'AppleGothic'
 
 # excel 데이터 불러오기 
 data = pd.read_excel('practice_trend.xlsx', sheet_name="데이터", header=0)
