@@ -3,14 +3,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-
-# 폰트 설정
-import os
-import matplotlib.font_manager as fm 
-
-font_path = './customFonts/NanumGothic-Regular.ttf'
-fontprop = fm.FontProperties(fname=font_path)
-plt.rc('font', family='NanumGothic')
+# 맥 한글 설정
+plt.rc('font', family='AppleGothic')
+plt.rcParams['axes.unicode_minus'] = False
 
 # excel 데이터 불러오기 
 data = pd.read_excel('practice_trend.xlsx', sheet_name="데이터", header=0)
