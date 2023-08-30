@@ -4,8 +4,12 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # 맥 한글 설정
-plt.rc('font', family='AppleGothic')
-plt.rcParams['axes.unicode_minus'] = False
+# plt.rc('font', family='AppleGothic')
+# plt.rcParams['axes.unicode_minus'] = False
+
+# Ubuntu 한글 설정
+font_family = "UnBatang"
+plt.rcParams["font.family"] = font_family
 
 # excel 데이터 불러오기 
 data = pd.read_excel('practice_trend.xlsx', sheet_name="데이터", header=0)
